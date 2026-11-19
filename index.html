@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Para Emy 🕷️ | Spider-Verse Edition</title>
+  <title>Para ti, Emy 🕷️❤️ | Spider-Verse Edition</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,8 @@
       --bg-void: #05070f;
       --spidey-red: #ff2a38;
       --spidey-blue: #00d2ff;
-      --card-glass: rgba(13, 17, 34, 0.78);
+      --love-pink: #ff5c8a;
+      --card-glass: rgba(13, 17, 34, 0.80);
       --text-main: #f8fafc;
       --text-dim: #a3b1cc;
     }
@@ -57,7 +58,7 @@
     #portal-intro {
       position: fixed;
       inset: 0;
-      background: radial-gradient(circle at center, #151c3b 0%, #04060c 100%);
+      background: radial-gradient(circle at center, #1b163b 0%, #04060c 100%);
       z-index: 200;
       display: flex;
       flex-direction: column;
@@ -96,9 +97,9 @@
 
     .portal-ring::before {
       border-top-color: var(--spidey-red);
-      border-left-color: var(--spidey-red);
+      border-left-color: var(--love-pink);
       animation: spinPortal 2.1s linear infinite;
-      box-shadow: 0 0 28px rgba(255, 42, 56, 0.55);
+      box-shadow: 0 0 28px rgba(255, 42, 56, 0.6);
     }
 
     .portal-ring::after {
@@ -119,19 +120,19 @@
     .spider-emblem {
       width: 72px;
       height: 72px;
-      background: radial-gradient(circle, rgba(255, 42, 56, 0.25), rgba(0, 210, 255, 0.1));
+      background: radial-gradient(circle, rgba(255, 42, 56, 0.3), rgba(0, 210, 255, 0.12));
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: transform 0.3s ease;
       z-index: 2;
-      animation: pulseCore 1.8s infinite alternate;
+      animation: pulseCore 1.5s infinite alternate;
     }
 
     @keyframes pulseCore {
       from { transform: scale(0.95); }
-      to { transform: scale(1.06); }
+      to { transform: scale(1.08); }
     }
 
     .intro-tag {
@@ -146,7 +147,7 @@
 
     .intro-heading {
       font-family: 'Outfit', sans-serif;
-      font-size: 1.9rem;
+      font-size: 1.95rem;
       font-weight: 800;
       margin-bottom: 10px;
       text-shadow: -2.5px 0 var(--spidey-red), 2.5px 0 var(--spidey-blue);
@@ -155,7 +156,7 @@
     .intro-tip {
       color: var(--text-dim);
       font-size: 0.95rem;
-      max-width: 310px;
+      max-width: 320px;
     }
 
     /* Barra superior flotante (HUD + Control de Música) */
@@ -240,23 +241,23 @@
 
     .comic-pill {
       display: inline-block;
-      background: linear-gradient(90deg, rgba(255, 42, 56, 0.22), rgba(0, 210, 255, 0.22));
-      border: 1px solid rgba(0, 210, 255, 0.45);
-      color: #8ceaff;
-      padding: 6px 16px;
+      background: linear-gradient(90deg, rgba(255, 42, 56, 0.25), rgba(0, 210, 255, 0.25));
+      border: 1px solid rgba(255, 92, 138, 0.55);
+      color: #ffb3c6;
+      padding: 6px 18px;
       border-radius: 999px;
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 700;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.4px;
       text-transform: uppercase;
       margin-bottom: 18px;
     }
 
     .hero-title {
       font-family: 'Outfit', sans-serif;
-      font-size: clamp(2.8rem, 7.5vw, 4.5rem);
+      font-size: clamp(2.7rem, 7.5vw, 4.4rem);
       font-weight: 800;
-      line-height: 1.05;
+      line-height: 1.06;
       margin-bottom: 16px;
       letter-spacing: -1px;
       color: #ffffff;
@@ -264,11 +265,11 @@
     }
 
     .hero-sub {
-      color: var(--text-dim);
-      font-size: 1.05rem;
-      max-width: 560px;
-      margin: 0 auto 16px;
-      line-height: 1.65;
+      color: #cbd5e1;
+      font-size: 1.06rem;
+      max-width: 580px;
+      margin: 0 auto 18px;
+      line-height: 1.68;
     }
 
     .web-hint {
@@ -276,11 +277,11 @@
       align-items: center;
       gap: 6px;
       font-size: 0.82rem;
-      color: #ff858d;
-      background: rgba(255, 42, 56, 0.12);
-      padding: 6px 14px;
+      color: #ff99ac;
+      background: rgba(255, 42, 56, 0.14);
+      padding: 6px 15px;
       border-radius: 999px;
-      border: 1px dashed rgba(255, 42, 56, 0.4);
+      border: 1px dashed rgba(255, 92, 138, 0.45);
     }
 
     /* Panel estilo Spider-Bot / HUD de Cualidades */
@@ -303,7 +304,7 @@
       left: 0;
       right: 0;
       height: 3.5px;
-      background: linear-gradient(90deg, var(--spidey-red), var(--spidey-blue), var(--spidey-red));
+      background: linear-gradient(90deg, var(--spidey-red), var(--love-pink), var(--spidey-blue));
     }
 
     .panel-top {
@@ -329,10 +330,10 @@
     .status-badge {
       font-size: 0.75rem;
       font-weight: 700;
-      color: #4ade80;
-      background: rgba(74, 222, 128, 0.12);
-      border: 1px solid rgba(74, 222, 128, 0.3);
-      padding: 4px 10px;
+      color: #ff8fa3;
+      background: rgba(255, 92, 138, 0.14);
+      border: 1px solid rgba(255, 92, 138, 0.35);
+      padding: 4px 12px;
       border-radius: 999px;
       letter-spacing: 0.5px;
     }
@@ -354,8 +355,8 @@
     .stat-card:hover {
       transform: translateY(-5px);
       background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(0, 210, 255, 0.5);
-      box-shadow: 0 12px 28px rgba(0, 210, 255, 0.12);
+      border-color: rgba(255, 92, 138, 0.55);
+      box-shadow: 0 12px 28px rgba(255, 42, 56, 0.15);
     }
 
     .stat-row {
@@ -394,20 +395,20 @@
     .bar-fill {
       height: 100%;
       border-radius: 999px;
-      background: linear-gradient(90deg, var(--spidey-red), var(--spidey-blue));
+      background: linear-gradient(90deg, var(--spidey-red), var(--love-pink), var(--spidey-blue));
       width: 0;
       transition: width 1.4s cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     .stat-text {
-      font-size: 0.91rem;
+      font-size: 0.92rem;
       color: var(--text-dim);
-      line-height: 1.58;
+      line-height: 1.6;
     }
 
     /* Carta Principal */
     .message-card {
-      background: linear-gradient(155deg, rgba(18, 23, 44, 0.88), rgba(10, 13, 25, 0.95));
+      background: linear-gradient(155deg, rgba(22, 20, 46, 0.90), rgba(10, 13, 25, 0.96));
       backdrop-filter: blur(18px);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 26px;
@@ -423,7 +424,7 @@
       inset: 0;
       border-radius: 26px;
       padding: 1.5px;
-      background: linear-gradient(135deg, var(--spidey-red), transparent 40%, transparent 60%, var(--spidey-blue));
+      background: linear-gradient(135deg, var(--spidey-red), var(--love-pink) 45%, transparent 60%, var(--spidey-blue));
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
@@ -433,16 +434,19 @@
 
     .msg-header {
       font-family: 'Outfit', sans-serif;
-      font-size: 1.45rem;
+      font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 20px;
       color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .msg-body p {
       color: #e2e8f0;
-      font-size: 1.02rem;
-      line-height: 1.78;
+      font-size: 1.03rem;
+      line-height: 1.82;
       margin-bottom: 18px;
     }
 
@@ -456,7 +460,7 @@
     }
 
     .tag-red {
-      color: #ff858d;
+      color: #ff8fa3;
       font-weight: 600;
     }
 
@@ -466,17 +470,17 @@
     }
 
     .spidey-action-btn {
-      background: linear-gradient(135deg, var(--spidey-red) 0%, #c81420 100%);
+      background: linear-gradient(135deg, var(--spidey-red) 0%, #d91e48 100%);
       color: #fff;
       border: none;
-      padding: 16px 32px;
+      padding: 16px 34px;
       border-radius: 999px;
       font-family: 'Outfit', sans-serif;
-      font-size: 1.05rem;
+      font-size: 1.06rem;
       font-weight: 700;
       letter-spacing: 0.4px;
       cursor: pointer;
-      box-shadow: 0 10px 30px rgba(255, 42, 56, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+      box-shadow: 0 10px 30px rgba(255, 42, 56, 0.48), 0 0 0 1px rgba(255, 255, 255, 0.18) inset;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       display: inline-flex;
       align-items: center;
@@ -485,15 +489,15 @@
 
     .spidey-action-btn:hover {
       transform: translateY(-3px) scale(1.03);
-      box-shadow: 0 14px 38px rgba(255, 42, 56, 0.65), 0 0 22px rgba(0, 210, 255, 0.4);
+      box-shadow: 0 14px 38px rgba(255, 42, 56, 0.68), 0 0 24px rgba(0, 210, 255, 0.45);
     }
 
     .final-toast {
       margin-top: 22px;
       font-family: 'Outfit', sans-serif;
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       font-weight: 600;
-      color: #8ceaff;
+      color: #ffb3c6;
       opacity: 0;
       transform: translateY(10px);
       transition: all 0.5s ease;
@@ -511,11 +515,11 @@
       pointer-events: none;
       z-index: 120;
       font-family: 'Bangers', cursive;
-      font-size: 1.4rem;
+      font-size: 1.45rem;
       letter-spacing: 1.5px;
       color: #fff;
       text-shadow: -2px 2px 0 var(--spidey-red), 2px -2px 0 var(--spidey-blue);
-      animation: popFade 0.85s ease-out forwards;
+      animation: popFade 0.9s ease-out forwards;
     }
 
     @keyframes popFade {
@@ -547,16 +551,16 @@
         </svg>
       </div>
     </div>
-    <span class="intro-tag">Tierra-616 • Señal Entrante</span>
-    <h2 class="intro-heading">Archivo para Emy</h2>
-    <p class="intro-tip">Toca el portal arácnido para entrar.</p>
+    <span class="intro-tag">Bienvenido a este Universo </span>
+    <h2 class="intro-heading">Para ti con cariño</h2>
+    <p class="intro-tip">Toca el portal arácnido para abrir tu sorpresa.</p>
   </div>
 
- <!-- Barra superior HUD con botón claro para pausar/reproducir -->
+  <!-- Barra superior HUD con botón claro para pausar/reproducir -->
   <div class="top-hud">
     <div class="hud-chip">
-      <span>🕷️</span>
-      <span>CON CARIÑO PARA TI EMY</span>
+      <span>❤️</span>
+      <span>CON TODO MI CARIÑO, EMY</span>
     </div>
     <button class="hud-chip music-btn" id="music-btn" title="Pausar o reproducir música">
       <div class="equalizer">
@@ -569,82 +573,82 @@
   <!-- Contenido Principal -->
   <main class="wrapper">
     <section class="hero">
-      <span class="comic-pill">Espero que te guste 🥺</span>
-      <h1 class="hero-title">PARA EMY</h1>
-      <p class="hero-sub">Tranqui, que esto no es ninguna fiesta sorpresa ni nada raro. Solo un pequeño detalle porque te aprecio muchísimo y te deseo un feliz cumple.</p>
-      <span class="web-hint">🕸️ Tip: Toca cualquier parte de la pantalla para lanzar telarañas</span>
+      <span class="comic-pill">Para una de mis personas favoritas 🥺❤️</span>
+      <h1 class="hero-title">FELIZ CUMPLE, EMY</h1>
+      <p class="hero-sub">Tranqui, que sé que no te gustan las fiestas ni las cosas exageradas. Esto es solo un pedacito de todo lo que siento por ti y lo feliz que me hace poder celebrarte hoy a tu lado.</p>
+      <span class="web-hint">🕸️ Tip: Toca cualquier parte de la pantalla para lanzar telarañas y amor</span>
     </section>
 
     <!-- Panel HUD de Cualidades -->
     <section class="hud-panel">
       <div class="panel-top">
-        <h2 class="panel-title">⚡ Escaneo de Habilidades Reales</h2>
-        <span class="status-badge">● 100% AUTÉNTICO</span>
+        <h2 class="panel-title">⚡ Lo que más me gusta de ti</h2>
+        <span class="status-badge">♥ 100% MI PERSONA FAVORITA</span>
       </div>
 
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-row">
-            <span class="stat-name">🕸️ Disposición a ayudar</span>
+            <span class="stat-name">🕸️ Tu corazón gigante</span>
             <span class="stat-val">NIVEL MAX</span>
           </div>
-          <div class="bar-track"><div class="bar-fill" data-width="98%"></div></div>
-          <p class="stat-text">Casi siempre que alguien necesita un favor y está en tus manos hacerlo, lo haces sin poner ningún problema.</p>
+          <div class="bar-track"><div class="bar-fill" data-width="100%"></div></div>
+          <p class="stat-text">Siempre tienes esa disposición tan bonita de ayudar sin poner peros cuando está en tus manos. Ese corazón tuyo es una de las cosas que más me enamora.</p>
         </div>
 
         <div class="stat-card">
           <div class="stat-row">
-            <span class="stat-name">⚡ Cero rendirse fácil</span>
+            <span class="stat-name">⚡ Nunca te rindes</span>
             <span class="stat-val">100%</span>
           </div>
           <div class="bar-track"><div class="bar-fill" data-width="100%"></div></div>
-          <p class="stat-text">Si tienes que arreglar algo y no sabes cómo, buscas y encuentras la manera de resolverlo. Siempre das lo mejor.</p>
+          <p class="stat-text">Si algo se complica o no sabes cómo arreglarlo, buscas hasta encontrarle solución. Admiro muchísimo cómo siempre das lo mejor de ti en todo.</p>
         </div>
 
         <div class="stat-card">
           <div class="stat-row">
-            <span class="stat-name">🤝 Buena vibra y amistad</span>
-            <span class="stat-val">LEGENDARIO</span>
+            <span class="stat-name">❤️ Tu compañía y tu vibra</span>
+            <span class="stat-val">INFINITO</span>
           </div>
-          <div class="bar-track"><div class="bar-fill" data-width="96%"></div></div>
-          <p class="stat-text">Eres una persona súper amigable con la que da gusto hablar y compartir. Haces que la gente se sienta bien.</p>
+          <div class="bar-track"><div class="bar-fill" data-width="98%"></div></div>
+          <p class="stat-text">Estar contigo, hablar contigo y compartir momentos juntos es de mis lugares seguros favoritos en todo este universo.</p>
         </div>
 
         <div class="stat-card">
           <div class="stat-row">
-            <span class="stat-name">💤 Modo Ahorro de Energía</span>
+            <span class="stat-name">💤 Modo Osito Dormilón</span>
             <span class="stat-val">∞ HRS</span>
           </div>
-          <div class="bar-track"><div class="bar-fill" data-width="92%"></div></div>
-          <p class="stat-text">Aunque duermes un montón (jsjsjs, hay que admitirlo), cuando estás activo siempre buscas hacer las cosas lo mejor posible.</p>
+          <div class="bar-track"><div class="bar-fill" data-width="94%"></div></div>
+          <p class="stat-text">Aunque duermes un montón (jsjsjs, hay que admitirlo, mi dormilón), hasta cuando recargas energía me pareces lo más tierno del mundo.</p>
         </div>
       </div>
     </section>
 
-    <!-- Carta Sincera -->
+    <!-- Carta Sincera y Romántica -->
     <section class="message-card">
-      <h2 class="msg-header">Solo pasaba a recordarte algo</h2>
+      <h2 class="msg-header">💌 Una carta desde el corazón</h2>
       <div class="msg-body">
-        <p>Hola, Emy.</p>
-        <p>Sé perfectamente que no te gusta celebrar tu cumpleaños y lo entiendo y lo respeto totalmente, así que cero presiones con eso.</p>
-        <p>Simplemente quería decirte que, igual que pasa con todas las personas que realmente me importan, <span class="tag-blue">mientras tú me dejes seguir siendo parte de tu vida, como siempre te lo eh dicho</span>, este día también va a ser importante para mí, y seguro lo es para toda tu familia y tu gente cercana.</p>
-        <p>A veces uno piensa que no, pero <span class="tag-red">sí eres alguien muy valioso e importante para quienes te rodean</span> —incluyéndome—. Admiro mucho tu forma de ser, lo buen amigo que eres, las ganas que le pones a hacer todo bien y esa capacidad tuya de no rendirte hasta encontrarle solución a las cosas.</p>
-        <p>Te mereces que te pasen puras cosas buenas, de verdad. ¡Un abrazo gigante y cuenta conmigo siempre!</p>
+        <p>Holi, Emy.</p>
+        <p>Sé perfectamente que no te gusta celebrar tu cumpleaños y lo respeto muchísimo, así que cero presiones con eso. Pero para mí era imposible dejar pasar este día sin recordarte cuánto te quiero y lo especial que eres para mí.</p>
+        <p>Como siempre te lo he dicho, <span class="tag-blue">mientras tú me permitas seguir caminando a tu lado</span>, este día siempre va a ser súper importante para mí, porque es el día en que nació una de las personas mas importantes para mi.</p>
+        <p>A veces tú mismo no dimensionas lo increíble que eres, pero <span class="tag-red">eres alguien demasiado valioso, noble y especial</span>. Amo tu forma de ser, tu ternura aveces pero eres demasiado lindo cuando te pones asi, las ganas que le pones a todo y esa capacidad tuya de hacerme sentir tan bien con solo estar ahí.</p>
+        <p>Le pido a la vida que te regale mil razones para sonreír, que te cumpla cada meta y que me deje seguir acompañandote en aventuras en cada universo. Te quiero muchísimo, Emy. ¡Feliz cumpleaños, mi vida!</p>
       </div>
     </section>
 
     <!-- Botón Final -->
     <div class="cta-area">
       <button class="spidey-action-btn" id="team-btn">
-        <span>🕷️</span>
-        <span>Activar señal de equipo</span>
+        <span>❤️</span>
+        <span>Activar la señal</span>
       </button>
-      <p class="final-toast" id="final-toast">¡Aquí me tienes siempre en tu equipo, Emy! 🕸️⚡</p>
+      <p class="final-toast" id="final-toast">¡En este y en todos los universos, siempre estare contigo,si asi lo quieres! 🕷️❤️</p>
     </div>
   </main>
 
   <script>
-    // === 1. ESCENA NIVEL DIOS: Luna, Ciudad, Spider-Man balanceándose y Telarañas ===
+    // === 1. ESCENA: Luna, Ciudad, Spider-Man balanceándose y Telarañas ===
     const canvas = document.getElementById('universe-canvas');
     const ctx = canvas.getContext('2d');
     let width, height;
@@ -669,7 +673,7 @@
               windows.push({
                 x: wx,
                 y: wy,
-                color: Math.random() > 0.8 ? 'rgba(255, 42, 56, 0.35)' : (Math.random() > 0.5 ? 'rgba(0, 210, 255, 0.32)' : 'rgba(255, 235, 160, 0.2)')
+                color: Math.random() > 0.78 ? 'rgba(255, 92, 138, 0.38)' : (Math.random() > 0.5 ? 'rgba(0, 210, 255, 0.32)' : 'rgba(255, 235, 160, 0.2)')
               });
             }
           }
@@ -682,14 +686,14 @@
     window.addEventListener('resize', initScene);
     initScene();
 
-    for (let i = 0; i < 70; i++) {
+    for (let i = 0; i < 75; i++) {
       particles.push({
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
-        r: Math.random() * 2.2 + 0.6,
+        r: Math.random() * 2.3 + 0.6,
         vx: (Math.random() - 0.5) * 0.28,
         vy: -(Math.random() * 0.35 + 0.1),
-        color: Math.random() > 0.5 ? 'rgba(255, 42, 56, 0.55)' : 'rgba(0, 210, 255, 0.55)'
+        color: Math.random() > 0.5 ? 'rgba(255, 92, 138, 0.6)' : 'rgba(0, 210, 255, 0.55)'
       });
     }
 
@@ -705,14 +709,14 @@
         alpha: 1
       });
 
-      const sounds = ['THWIP!', '¡ZAS!', 'SPIDEY!', '🕸️'];
+      const sounds = ['THWIP! ❤️', 'TE QUIERO!', 'TE QUIERO 🕷️', '❤️🕸️'];
       const pop = document.createElement('span');
       pop.className = 'comic-pop';
       pop.textContent = sounds[Math.floor(Math.random() * sounds.length)];
       pop.style.left = `${targetX}px`;
       pop.style.top = `${targetY}px`;
       document.body.appendChild(pop);
-      setTimeout(() => pop.remove(), 850);
+      setTimeout(() => pop.remove(), 900);
     }
 
     document.addEventListener('pointerdown', (e) => {
@@ -731,7 +735,6 @@
       const spideyY = anchorY + Math.cos(swingAngle) * ropeLen;
 
       ctx.save();
-      // Hilo de telaraña hacia el cielo
       ctx.strokeStyle = 'rgba(255, 255, 255, 0.35)';
       ctx.lineWidth = 1.5;
       ctx.beginPath();
@@ -739,18 +742,15 @@
       ctx.lineTo(spideyX, spideyY);
       ctx.stroke();
 
-      // Silueta estilizada de Spidey
       ctx.translate(spideyX, spideyY);
       ctx.rotate(-swingAngle * 0.8);
 
-      // Resplandor rojo/azul alrededor
-      ctx.shadowColor = '#00d2ff';
+      ctx.shadowColor = '#ff5c8a';
       ctx.shadowBlur = 14;
       ctx.fillStyle = '#0d1326';
       ctx.strokeStyle = '#ff2a38';
       ctx.lineWidth = 1.6;
 
-      // Torso y cabeza
       ctx.beginPath();
       ctx.ellipse(0, 4, 7, 11, 0.2, 0, Math.PI * 2);
       ctx.fill();
@@ -761,13 +761,11 @@
       ctx.fill();
       ctx.stroke();
 
-      // Ojos blancos icónicos
       ctx.fillStyle = '#ffffff';
       ctx.beginPath();
       ctx.ellipse(5, -8, 2.2, 1.1, -0.3, 0, Math.PI * 2);
       ctx.fill();
 
-      // Brazo sujetando telaraña + piernas flexionadas
       ctx.strokeStyle = '#ff2a38';
       ctx.lineWidth = 2.4;
       ctx.beginPath();
@@ -787,9 +785,8 @@
     function drawLoop(time) {
       ctx.clearRect(0, 0, width, height);
 
-      // Resplandor cósmico rojo y azul
       const gradRed = ctx.createRadialGradient(width * 0.15, height * 0.2, 10, width * 0.15, height * 0.2, width * 0.55);
-      gradRed.addColorStop(0, 'rgba(255, 42, 56, 0.11)');
+      gradRed.addColorStop(0, 'rgba(255, 42, 56, 0.13)');
       gradRed.addColorStop(1, 'transparent');
       ctx.fillStyle = gradRed;
       ctx.fillRect(0, 0, width, height);
@@ -800,22 +797,19 @@
       ctx.fillStyle = gradBlue;
       ctx.fillRect(0, 0, width, height);
 
-      // Luna llena estilizada Spider-Verse
       const moonX = width * 0.82;
       const moonY = height * 0.18;
       const moonGrad = ctx.createRadialGradient(moonX, moonY, 8, moonX, moonY, 65);
       moonGrad.addColorStop(0, 'rgba(255, 255, 255, 0.22)');
-      moonGrad.addColorStop(0.5, 'rgba(0, 210, 255, 0.08)');
+      moonGrad.addColorStop(0.5, 'rgba(255, 92, 138, 0.09)');
       moonGrad.addColorStop(1, 'transparent');
       ctx.fillStyle = moonGrad;
       ctx.beginPath();
       ctx.arc(moonX, moonY, 65, 0, Math.PI * 2);
       ctx.fill();
 
-      // Spider-Man balanceándose
       drawSwingingSpidey(time || 0);
 
-      // Edificios
       buildings.forEach(b => {
         ctx.fillStyle = 'rgba(8, 11, 24, 0.88)';
         ctx.fillRect(b.x, height - b.height, b.width, b.height);
@@ -825,7 +819,6 @@
         });
       });
 
-      // Partículas
       particles.forEach(p => {
         p.x += p.vx;
         p.y += p.vy;
@@ -839,7 +832,6 @@
         ctx.fill();
       });
 
-      // Telarañas disparadas
       for (let i = webs.length - 1; i >= 0; i--) {
         const w = webs[i];
         if (w.progress < 1) {
@@ -854,7 +846,7 @@
         ctx.save();
         ctx.strokeStyle = `rgba(255, 255, 255, ${w.alpha * 0.88})`;
         ctx.lineWidth = 2;
-        ctx.shadowColor = '#00d2ff';
+        ctx.shadowColor = '#ff5c8a';
         ctx.shadowBlur = 12;
 
         ctx.beginPath();
@@ -863,7 +855,7 @@
         ctx.stroke();
 
         if (w.progress >= 1) {
-          ctx.strokeStyle = `rgba(255, 255, 255, ${w.alpha * 0.55})`;
+          ctx.strokeStyle = `rgba(255, 179, 198, ${w.alpha * 0.6})`;
           ctx.lineWidth = 1.2;
           for (let r = 8; r <= 24; r += 8) {
             ctx.beginPath();
@@ -904,11 +896,9 @@
       }
     }
 
-    // Intentar reproducir apenas carga la página
     window.addEventListener('DOMContentLoaded', tryAutoPlay);
     window.addEventListener('load', tryAutoPlay);
 
-    // Respaldo: si el navegador bloqueó el autoplay inicial, arranca al primer toque en cualquier sitio
     function unlockAudioOnFirstTouch() {
       if (!userPaused && bgMusic.paused) {
         tryAutoPlay();
@@ -930,7 +920,6 @@
       tryAutoPlay();
     });
 
-    // Botón superior para pausar o reanudar cuando quiera
     musicBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       if (!bgMusic.paused) {
@@ -943,7 +932,7 @@
       }
     });
 
-    // Botón final con ráfaga de telarañas
+    // Botón final con ráfaga de telarañas y amor
     const teamBtn = document.getElementById('team-btn');
     const finalToast = document.getElementById('final-toast');
 
@@ -953,7 +942,7 @@
       const cx = rect.left + rect.width / 2;
       const cy = rect.top;
 
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 7; i++) {
         setTimeout(() => {
           shootWeb(
             cx + (Math.random() - 0.5) * 280,
